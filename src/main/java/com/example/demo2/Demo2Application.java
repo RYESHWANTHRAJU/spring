@@ -18,11 +18,11 @@ public class Demo2Application {
 	@Component
 	class AppCnfig
 	{
-//		@Value("${spring.application.name}")
-//		private String name;
-//		public void printCnfig() {
-//			System.out.println("App Name: " + name);
-//		}
+		@Value("${spring.application.name}")
+		private String name;
+		public void printCnfig() {
+			System.out.println("App Name: " + name);
+		}
 		@Autowired
 		private Environment env;
 
